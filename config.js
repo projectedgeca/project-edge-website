@@ -12,6 +12,6 @@
   disabled automatically and an error is shown.
 */
 window.PE_CONFIG = {
-  SUPABASE_URL: "",
-  SUPABASE_PUBLISHABLE_KEY: ""
+  SUPABASE_URL: "https://jclzjnzaqkqcgxihqfhy.supabase.co",
+  SUPABASE_PUBLISHABLE_KEY: "sb_publishable_mpNvHEh7HhMtiWDuQNElcQ_7rh18-fq"
 };
