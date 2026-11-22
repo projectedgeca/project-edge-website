@@ -184,6 +184,12 @@ footer{position:relative}footer::before{content:"";position:absolute;top:-1px;le
 .auth{max-width:540px;margin:0 auto}.auth form{display:grid;gap:12px;margin-top:16px}.auth .msg{margin:10px 0;padding:10px 14px;border-radius:10px;border:1px solid var(--line);font-size:14px;overflow-wrap:anywhere}.auth .msg.err{border-color:var(--pu)}.auth .msg.good{border-color:var(--cy)}
 .lnk{background:none;border:0;color:var(--cy);cursor:pointer;font:inherit;padding:8px 0;text-decoration:underline;justify-self:start}.dl2 dt{color:var(--mut);font-size:13px}.dl2 dd{margin:0 0 12px;overflow-wrap:anywhere}
 button[disabled]{opacity:.6;cursor:not-allowed}#authlink{padding:10px 18px}
+/* Header logo: keep "PROJECT EDGE" on one line, logo on the left, at every width */
+.logo{white-space:nowrap;flex:0 0 auto;min-width:0}.lg{flex:0 0 auto}
+@media(max-width:480px){.nav{gap:8px}nav .logo{font-size:12.5px;letter-spacing:.08em;gap:8px}nav .lg{width:36px;height:36px}.lg2{padding:6px 10px}.burger{padding:6px 10px}}
+@media(max-width:340px){nav .logo{font-size:11.5px;letter-spacing:.05em;gap:6px}nav .lg{width:32px;height:32px}.nav{gap:6px}}
+/* French labels are longer: tighten only the menu links on desktop so the wordmark never has to wrap or the header overflow */
+@media(min-width:1101px){html[lang^="fr"] .links{gap:10px;font-size:12.5px}html[lang^="fr"] .links .btn{padding:8px 12px}html[lang^="fr"] #authlink{padding:8px 12px}html[lang^="fr"] .nav{gap:8px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
